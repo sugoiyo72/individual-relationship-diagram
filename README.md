@@ -44,7 +44,12 @@ individual-relationship-diagram:  個人間の関係図
 
     DocumentRootを /{your path}/public に指定
 
-    AllowOverride ディレクティブ を yes に設定
+    AllowOverride ディレクティブ を all に設定
+
+## 4. ディレクトリをapache権限へ変更
+
+    chown apache.apache /{your_path}/ -R
+
 
 
 
