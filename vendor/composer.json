@@ -49,5 +49,9 @@
             "php oil r install"
         ]
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "require-dev": {
+        "eviweb/fuelphp-phpcs": "~1",
+        "squizlabs/php_codesniffer": "2.*"
+    }
 }

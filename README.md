@@ -13,7 +13,7 @@ individual-relationship-diagram:  個人間の関係図
 **開発時の動作環境**
 
     httpd   : Apache/2.4.10
-    MySQL   : 5.1.52 (DB Name: ivd | user : root | password : '')
+    MySQL   : 5.1.52 (DB Name: ird | user : root | password : '')
     PHP     : 5.5.24
 
 ## 1. fuelphpのセットアップ
@@ -34,11 +34,11 @@ individual-relationship-diagram:  個人間の関係図
 ### 2-1. データベースを作成
 
     $ mysql -uroot
-    > CREATE DATABASE `ivd` DEFAULT CHARACTER SET utf8;
+    > CREATE DATABASE `ird` DEFAULT CHARACTER SET utf8;
 
 ### 2-3. テーブル定義をimport
 
-    $ mysql -uroot ivd < ivd.sql
+    $ mysql -uroot ird < ird.sql
 
 ## 3. apache configファイルの設定
 

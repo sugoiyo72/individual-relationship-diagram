@@ -1,12 +1,14 @@
 <?php
 /**
- * Part of the Fuel framework.
+ * Part of the Individual Relationship Diagram.
  *
- * @package    Fuel
- * @version    1.7
+ * @package    Individual Relationship Diagram
+ * @version    0.1
  * @author     Fuel Development Team
+ * @author     Shinobu Komakine
  * @license    MIT License
  * @copyright  2010 - 2015 Fuel Development Team
+ * @copyright  Shinobu Komakine
  * @link       http://fuelphp.com
  */
 
@@ -53,7 +55,7 @@ return array(
 	/**
 	 * Settings for the file finder cache (the Cache class has it's own config!)
 	 */
-	// 'caching'         => false,
+	'caching'         => false,
 	// 'cache_lifetime'  => 3600, // In Seconds
 
 	/**
@@ -84,7 +86,7 @@ return array(
 	/**
 	 * Internal string encoding charset
 	 */
-	// 'encoding'  => 'UTF-8',
+	'encoding'  => 'UTF-8',
 
 	/**
 	 * DateTime settings
@@ -93,7 +95,7 @@ return array(
 	 * default_timezone		optional, if you want to change the server's default timezone
 	 */
 	// 'server_gmt_offset'  => 0,
-	// 'default_timezone'   => null,
+	'default_timezone'   => 'Asia/Tokyo',
 
 	/**
 	 * Logging Threshold.  Can be set to any of the following:
@@ -256,7 +258,7 @@ return array(
 	/**************************************************************************/
 	/* Always Load                                                            */
 	/**************************************************************************/
-	// 'always_load'  => array(
+	'always_load'  => array(
 
 		/**
 		 * These packages are loaded on Fuel's startup.
@@ -269,9 +271,9 @@ return array(
 		 *     array('auth'	=> PKGPATH.'auth/')
 		 * );
 		 */
-		// 'packages'  => array(
-		// 	//'orm',
-		// ),
+		'packages'  => array(
+			'orm',
+		),
 
 		/**
 		 * These modules are always loaded on Fuel's startup. You can specify them
@@ -307,6 +309,6 @@ return array(
 		 * If you don't want the lang in a group use null as groupname.
 		 */
 		// 'language'  => array(),
-	// ),
+	),
 
 );

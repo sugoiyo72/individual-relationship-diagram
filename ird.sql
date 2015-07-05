@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.1.52, for unknown-linux-gnu (x86_64)
 --
--- Host: localhost    Database: ivd
+-- Host: localhost    Database: ird
 -- ------------------------------------------------------
 -- Server version	5.1.52
 

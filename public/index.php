@@ -29,16 +29,19 @@ define('APPPATH', realpath(__DIR__.'/../fuel/app/').DIRECTORY_SEPARATOR);
 /**
  * Path to the default packages directory.
  */
-define('PKGPATH', realpath(__DIR__.'/../fuel/packages/').DIRECTORY_SEPARATOR);
+define('PKGPATH', realpath(__DIR__.'/../vendor/fuel/packages/').DIRECTORY_SEPARATOR);
 
 /**
  * The path to the framework core.
  */
-define('COREPATH', realpath(__DIR__.'/../fuel/core/').DIRECTORY_SEPARATOR);
+define('COREPATH', realpath(__DIR__.'/../vendor/fuel/core/').DIRECTORY_SEPARATOR);
 
 // Get the start time and memory for use later
 defined('FUEL_START_TIME') or define('FUEL_START_TIME', microtime(true));
 defined('FUEL_START_MEM') or define('FUEL_START_MEM', memory_get_usage());
+
+// ird version
+define('IRD_VERSION', '0.1');
 
 // Load in the Fuel autoloader
 if ( ! file_exists(COREPATH.'classes'.DIRECTORY_SEPARATOR.'autoloader.php'))
